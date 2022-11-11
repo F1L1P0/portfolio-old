@@ -1,0 +1,19 @@
+.home{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+
+    &__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid set-text-color($primary-color);
+
+        &--last{
+            color: $secondary-color;
+            font-weight: 700;    
+        }
+    }
+}
