@@ -9,6 +9,7 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
 @import "./scss/mixins";
 @import "./scss/home";
 @import "./scss/menu";
+@import "./scss/about";
 
 
 
@@ -56,6 +57,10 @@ main{
             }
         }
     }
+}
+
+.text-secondary{
+    color: $secondary-color;
 }
 
 footer{
