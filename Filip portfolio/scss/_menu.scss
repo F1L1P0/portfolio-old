@@ -1,3 +1,7 @@
+.active{
+    color: $secondary-color !important;
+}
+
 .menu-btn{
     position: absolute;
     z-index: 1;
@@ -95,6 +99,7 @@
                 @include transition-ease;
 
                 &:hover{
+                    color: $secondary-color;
                     transform:scale(110%);
                 }
             }
@@ -109,9 +114,7 @@
             @include transition-ease;
 
             &:hover{
-                color: $secondary-color;
                 text-decoration: underline;
-
             }
         }
     }

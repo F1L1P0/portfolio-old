@@ -10,6 +10,8 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
 @import "./scss/home";
 @import "./scss/menu";
 @import "./scss/about";
+@import "./scss/projects";
+@import "./scss/contact";
 
 
 
@@ -71,4 +73,8 @@ footer{
     text-align: right;
     padding: 1rem;
     color: set-text-color($primary-color);
+}
+
+.p1{
+    padding: 1rem !important;
 }
