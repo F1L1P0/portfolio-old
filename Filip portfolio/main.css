@@ -8,6 +8,11 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
   box-sizing: border-box;
 }
 
+a {
+  -webkit-tap-highlight-color: transparent;
+  outline: none !important;
+}
+
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -152,10 +157,10 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
   padding-bottom: 2rem;
 }
 .about__bio-image {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
-  background: url("../images/profile-photo.jpeg") no-repeat center;
-  background-size: contain;
+  background: url("../images/profile-photo.jpeg") no-repeat center 10%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,8 +170,11 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
   margin-bottom: 2rem;
 }
 .about__bio {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  padding: 1rem 2rem;
 }
 .about__bio .text-secondary {
   padding-bottom: 1rem;
@@ -201,19 +209,24 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
 .projects {
   padding-bottom: 2rem;
 }
-.projects__bio-image {
-  height: 50vh;
-  width: 100%;
-  background: url("../images/profile-photo.jpeg") no-repeat center;
-  background-size: contain;
+.projects__text {
+  display: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
-.projects__bio-image .text-secondary {
+.projects-image {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-image .text-secondary {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .projects__items {
   width: 60vw;
@@ -312,6 +325,70 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
   color: #fff;
 }
 
+.social-icons--contact {
+  position: initial !important;
+  margin-top: 2rem;
+}
+
+@media (min-width: 767px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding: 2rem 0.8rem;
+    background: rgba(39, 39, 39, 0.8);
+  }
+  .nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    margin: 0 5rem;
+  }
+  .about__bio-image {
+    height: 50vh;
+  }
+  .projects__text {
+    display: none;
+  }
+  .projects {
+    flex-flow: row wrap;
+    margin-top: 10rem;
+  }
+  .projects:nth-child(2) {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .about__bio-image {
+    height: 60vh;
+  }
+  .social-icons {
+    flex-direction: row !important;
+  }
+}
+@media (min-width: 992px) {
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 8rem 1rem 5rem 1rem;
+  }
+  .projects__items {
+    margin: 2rem;
+    width: 35%;
+  }
+}
 body {
   background: #272727;
   color: #fff;

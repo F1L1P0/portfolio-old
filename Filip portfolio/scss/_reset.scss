@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a{
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+}
