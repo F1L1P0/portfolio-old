@@ -1,3 +1,8 @@
+@use "./breakpoints" as *;
+@use "./mixins" as *;
+@use "./functions" as *;
+
+
 @include bigger-than(sm){
     .menu-btn{
         visibility: hidden;

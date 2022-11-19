@@ -1,3 +1,7 @@
+@use "./functions" as *;
+@use "./mixins" as *;
+@use "./variables" as *;
+
 .projects{
     padding-bottom: 2rem;
 

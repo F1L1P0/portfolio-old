@@ -1,7 +1,7 @@
 /* 
 OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
 @use "./scss/index" as *;
-*/
+
 @import "./scss/reset";
 @import "./scss/breakpoints";
 @import "./scss/variables";
@@ -13,7 +13,19 @@ OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
 @import "./scss/projects";
 @import "./scss/contact";
 @import "./scss/responsive";
+*/
 
+@forward "./scss/reset";
+@forward "./scss/breakpoints";
+@use "./scss/variables" as *;
+@use "./scss/functions" as *;
+@use "./scss/mixins" as *;
+@forward "./scss/home";
+@forward "./scss/menu";
+@forward "./scss/about";
+@forward "./scss/projects";
+@forward "./scss/contact";
+@forward "./scss/responsive";
 
 
 

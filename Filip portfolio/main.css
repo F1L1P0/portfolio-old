@@ -1,7 +1,3 @@
-/* 
-OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
-@use "./scss/index" as *;
-*/
 * {
   margin: 0;
   padding: 0;
@@ -389,6 +385,22 @@ a {
     width: 35%;
   }
 }
+/* 
+OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
+@use "./scss/index" as *;
+
+@import "./scss/reset";
+@import "./scss/breakpoints";
+@import "./scss/variables";
+@import "./scss/functions";
+@import "./scss/mixins";
+@import "./scss/home";
+@import "./scss/menu";
+@import "./scss/about";
+@import "./scss/projects";
+@import "./scss/contact";
+@import "./scss/responsive";
+*/
 body {
   background: #272727;
   color: #fff;
