@@ -206,12 +206,13 @@ a {
   padding-bottom: 2rem;
 }
 .projects__text {
-  display: none;
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 1.7rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
+  width: 100%;
 }
 .projects-image {
   height: 20vh;
@@ -354,9 +355,6 @@ a {
   .about__bio-image {
     height: 50vh;
   }
-  .projects__text {
-    display: none;
-  }
   .projects {
     flex-flow: row wrap;
     margin-top: 10rem;
@@ -387,8 +385,6 @@ a {
 }
 /* 
 OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
-@use "./scss/index" as *;
-
 @import "./scss/reset";
 @import "./scss/breakpoints";
 @import "./scss/variables";

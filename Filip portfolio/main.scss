@@ -1,7 +1,5 @@
 /* 
 OLD WAY OF DOING IMPORTS, THAT GOT REPLACED WITH @USE AND @FORWARD
-@use "./scss/index" as *;
-
 @import "./scss/reset";
 @import "./scss/breakpoints";
 @import "./scss/variables";
