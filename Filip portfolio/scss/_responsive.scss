@@ -2,71 +2,66 @@
 @use "./mixins" as *;
 @use "./functions" as *;
 
+@include bigger-than(sm) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
 
-@include bigger-than(sm){
-    .menu-btn{
-        visibility: hidden;
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding: 2rem 0.8rem;
+        background: rgba(39, 39, 39, 0.8);
+      }
     }
-    .nav{
-        visibility: visible;
-
-        .menu-nav{
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-            
-
-            &__item{
-                display: inline;
-                padding: 2rem 0.8rem;
-                background: rgba(39, 39, 39, 0.8)
-
-            }
-        }
-            &__link{
-                font-size: 1.5rem;
-            }
+    &__link {
+      font-size: 1.5rem;
     }
-    .about__bio{
-        margin:0 5rem;
-        &-image{
-            height: 50vh;
-        }
+  }
+  .about__bio {
+    margin: 0 5rem;
+    &-image {
+      height: 50vh;
     }
-    
-    .projects{
-        flex-flow: row wrap;
-        margin-top: 10rem;
-    
-        &:nth-child(2){
-            margin-top: 10rem;
-        }
-    }
+  }
 
+  .projects {
+    flex-flow: row wrap;
+    margin-top: 10rem;
+
+    &:nth-child(2) {
+      margin-top: 10rem;
+    }
+  }
 }
-@include bigger-than(md){
-    .about__bio-image{
-        height: 60vh;
-    }
-    
-    .social-icons{
-        flex-direction: row !important;
-    }
+@include bigger-than(md) {
+  .about__bio-image {
+    height: 60vh;
+  }
+
+  .social-icons {
+    flex-direction: row !important;
+  }
 }
 
-@include bigger-than(md){
-    .projects{
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        margin: 8rem 1rem 5rem 1rem; 
+@include bigger-than(md) {
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 8rem 1rem 5rem 1rem;
 
-
-        &__items{
-            margin: 2rem;
-            width: 35%;
-        }
+    &__items {
+      margin: 2rem;
+      width: 35%;
     }
+  }
 }

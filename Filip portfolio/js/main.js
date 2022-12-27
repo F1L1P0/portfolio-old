@@ -9,7 +9,7 @@ let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
-    if(!showMenu){
+    if (!showMenu) {
         hamburger.classList.add("open");
         nav.classList.add("open");
         menuNav.classList.add("open");
